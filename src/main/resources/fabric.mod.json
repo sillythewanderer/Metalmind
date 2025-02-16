@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "metalmind",
+  "version": "${version}",
+  "name": "Metalmind",
+  "description": "This mod (Metalmind) is ment to be grant players the ability to make and use feruchemy like that in the Mistborn  series by Brandon Sanderson",
+  "authors": [],
+  "contact": {},
+  "license": "unlicense",
+  "icon": "assets/metalmind/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.sillythewanderer.metalmind.client.MetalmindClient"
+    ],
+    "main": [
+      "org.sillythewanderer.metalmind.Metalmind"
+    ]
+  },
+  "mixins": [
+    "metalmind.mixins.json",
+    {
+      "config": "metalmind.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
