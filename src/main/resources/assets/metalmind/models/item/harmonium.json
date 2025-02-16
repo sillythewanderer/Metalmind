@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "metalmind:item/purified_harmonium"
+    "layer0": "metalmind:item/harmonium"
   }
 }
