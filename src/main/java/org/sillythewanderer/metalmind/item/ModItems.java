@@ -7,11 +7,12 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.sillythewanderer.metalmind.Metalmind;
+import org.sillythewanderer.metalmind.item.custom.ExplodingFoodItem;
 
 public class ModItems {
 
     public static final Item HARMONIUM = registerItem("harmonium",
-            new Item(new FabricItemSettings().food(new FoodComponent.Builder().alwaysEdible().build()).group(ModItemGroup.METALMIND_ITEMGROUP)));
+            new ExplodingFoodItem(new FabricItemSettings().group(ModItemGroup.METALMIND_ITEMGROUP).food(new FoodComponent.Builder().alwaysEdible().build())));
 
 
 
