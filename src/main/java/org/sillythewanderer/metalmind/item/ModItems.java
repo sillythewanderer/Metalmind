@@ -3,17 +3,19 @@ package org.sillythewanderer.metalmind.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.sillythewanderer.metalmind.Metalmind;
-import org.sillythewanderer.metalmind.item.custom.ExplodingFoodItem;
+import org.sillythewanderer.metalmind.item.custom.GainFeruchemyItem;
+import org.sillythewanderer.metalmind.item.custom.BandsOfMourningItem;
 
 public class ModItems {
 
     public static final Item HARMONIUM = registerItem("harmonium",
-            new ExplodingFoodItem(new FabricItemSettings().group(ModItemGroup.METALMIND_ITEMGROUP).food(new FoodComponent.Builder().alwaysEdible().build())));
+            new GainFeruchemyItem(new FabricItemSettings().group(ModItemGroup.METALMIND_ITEMGROUP).food(new FoodComponent.Builder().alwaysEdible().build())));
 
+    public static final Item BANDS_OF_MOURNING = registerItem("bands_of_mourning",
+            new BandsOfMourningItem(new FabricItemSettings().group(ModItemGroup.METALMIND_ITEMGROUP)));
 
 
     public static Item registerItem(String name, Item item) {
