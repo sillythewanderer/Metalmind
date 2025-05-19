@@ -29,6 +29,8 @@ public class BandsOfMourningItem extends Item {
             }
         }
 
+
+
         return super.use(world, user, hand);
     }
 }
